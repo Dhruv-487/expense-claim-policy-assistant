@@ -1,0 +1,30 @@
+{
+  "name": "expense-claim-policy-review-assistant-server",
+  "version": "1.0.0",
+  "description": "Backend API for Expense Claim Policy Review Assistant",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "ingest-policy": "node scripts/ingestPolicy.js"
+  },
+  "keywords": [
+    "expense-claim",
+    "mern",
+    "express",
+    "mongoose"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@google/genai": "^2.27.0",
+    "@xenova/transformers": "^2.17.2",
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^8.9.5"
+  }
+}
